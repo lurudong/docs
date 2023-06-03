@@ -1,0 +1,19 @@
+[Unit]
+```shell
+Description=mnzcmscore   
+```
+[Service]
+```shell
+WorkingDirectory=/home/web/MNZ.Web  
+ExecStart=/usr/bin/dotnet /home/web/MNZ.Web/MNZ.CMS.Core.Web.dll
+Restart=always  
+RestartSec=25 
+SyslogIdentifier=mnzcmscore  
+User=root  
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=ASPNETCORE_URLS=http://*:50001
+```
+[Install]
+```shell
+WantedBy=multi-user.target
+```
