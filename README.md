@@ -14,3 +14,5 @@
 
 ## 3.1. [Npm命令](npm/npm命令.md)
 
+# [Liunx](liunx#)
+## [Liunx发布.NntCore守护进程](liunx/liunx发布.net core守护进程.md)
